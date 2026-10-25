@@ -48,6 +48,8 @@ pytest
 
 Remote exposure: the MCP server requires a client `X-API-KEY`, but if `keep-backend` runs with `AUTH_TYPE=NO_AUTH` that key is not validated. Only expose the sidecar beyond loopback when the backend enforces authentication.
 
+Security checks: CI (`.github/workflows/keep-mcp-security.yml`) runs tests, `bandit` and `pip-audit --strict` on every change and weekly. Locally: `pip install pip-audit bandit && bandit -r keep_mcp -ll && pip-audit`.
+
 Docker: `docker compose --profile mcp up keep-mcp` (endpoint `http://localhost:8001/mcp`, published on loopback only; send `X-API-KEY`).
 
 Claude Desktop / Cursor (stdio):
