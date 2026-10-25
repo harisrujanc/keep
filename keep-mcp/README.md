@@ -4,6 +4,8 @@ MCP server for [Keep](https://github.com/keephq/keep), shipped as a sidecar next
 
 ![keep-mcp architecture](docs/architecture.png)
 
+![keep-mcp in a Keep deployment](docs/deployment.png)
+
 ## Tools
 
 | Tool | Keep endpoint |
