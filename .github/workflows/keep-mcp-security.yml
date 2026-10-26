@@ -47,4 +47,4 @@ jobs:
         run: bandit -r keep_mcp -ll
 
       - name: Dependency vulnerability audit (pip-audit)
-        run: pip-audit --strict
+        run: pip-audit --strict .
